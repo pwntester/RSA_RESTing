@@ -14,7 +14,7 @@ public class ServerRestlets extends Application{
     public static void main(String[] args) throws Exception {
         // Create a component
         Component component = new Component();
-        component.getServers().add(Protocol.HTTP, 8182); 
+        component.getServers().add(Protocol.HTTP, 8180); 
 
         // Create an application
         Application application = new ServerRestlets();
@@ -35,7 +35,7 @@ public class ServerRestlets extends Application{
         guard.setVerifier(verifier);
                
         final Router router = new Router(getContext()); 
-        router.attach("/customer", CustomerRessource.class);
+        router.attach("/customer", CustomerResource.class);
 
         guard.setNext(router);
         return guard;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.restlet.jse</groupId>
+  <artifactId>org.restlet</artifactId>
+  <versioning>
+    <release>2.2-Vuln</release>
+    <versions>
+      <version>2.2-Vuln</version>
+    </versions>
+    <lastUpdated>20140215212308</lastUpdated>
+  </versioning>
+</metadata>

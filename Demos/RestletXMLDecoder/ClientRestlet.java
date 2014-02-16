@@ -8,7 +8,7 @@ import org.restlet.data.MediaType;
 public class ClientRestlet { 
 	public static void main(String[] args) throws Exception {
 		// Prepare the request
-		ClientResource resource = new ClientResource( "http://localhost:8182/customer");
+		ClientResource resource = new ClientResource( "http://localhost:8180/customer");
 
 		// Add the client authentication to the call
 		ChallengeScheme scheme = ChallengeScheme.HTTP_BASIC;

