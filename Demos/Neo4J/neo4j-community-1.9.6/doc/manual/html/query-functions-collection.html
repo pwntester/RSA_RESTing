@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>14.3. Collection functions</title><link rel="stylesheet" type="text/css" href="docbook-xsl.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.76.1" /><link rel="home" href="index.html" title="The Neo4j Manual v1.9.6" /><link rel="up" href="query-function.html" title="Chapter 14. Functions" /><link rel="prev" href="query-functions-scalar.html" title="14.2. Scalar functions" /><link rel="next" href="query-functions-mathematical.html" title="14.4. Mathematical functions" /><link rel="preface" href="preface.html" title="Preface" /><link rel="part" href="introduction.html" title="Part I. Introduction" /><link rel="chapter" href="introduction-highlights.html" title="Chapter 1. Neo4j Highlights" /><link rel="chapter" href="graphdb-concepts.html" title="Chapter 2. Graph Database Concepts" /><link rel="chapter" href="graphdb-neo4j.html" title="Chapter 3. The Neo4j Graph Database" /><link rel="part" href="tutorials.html" title="Part II. Tutorials" /><link rel="chapter" href="tutorials-java-embedded.html" title="Chapter 4. Using Neo4j embedded in Java applications" /><link rel="chapter" href="tutorials-rest.html" title="Chapter 5. Neo4j Remote Client Libraries" /><link rel="chapter" href="tutorial-traversal.html" title="Chapter 6. The Traversal Framework" /><link rel="chapter" href="data-modeling-examples.html" title="Chapter 7. Data Modeling Examples" /><link rel="chapter" href="languages.html" title="Chapter 8. Languages" /><link rel="chapter" href="server-extending.html" title="Chapter 9. Extending the Neo4j Server" /><link rel="part" href="cypher-query-lang.html" title="Part III. Cypher Query Language" /><link rel="chapter" href="cypher-intro.html" title="Chapter 10. Introduction" /><link rel="chapter" href="query-syntax.html" title="Chapter 11. Syntax" /><link rel="chapter" href="query-read.html" title="Chapter 12. Reading Clauses" /><link rel="chapter" href="query-write.html" title="Chapter 13. Writing Clauses" /><link rel="chapter" href="query-function.html" title="Chapter 14. Functions" /><link rel="chapter" href="examples-from-sql-to-cypher.html" title="Chapter 15. From SQL to Cypher" /><link rel="part" href="reference-documentation.html" title="Part IV. Reference" /><link rel="chapter" href="capabilities.html" title="Chapter 16. Capabilities" /><link rel="chapter" href="transactions.html" title="Chapter 17. Transaction Management" /><link rel="chapter" href="import.html" title="Chapter 18. Data Import" /><link rel="chapter" href="indexing.html" title="Chapter 19. Indexing" /><link rel="chapter" href="graph-algo.html" title="Chapter 20. Graph Algorithms" /><link rel="chapter" href="server.html" title="Chapter 21. Neo4j Server" /><link rel="chapter" href="rest-api.html" title="Chapter 22. REST API" /><link rel="chapter" href="deprecations.html" title="Chapter 23. Deprecations" /><link rel="part" href="operations.html" title="Part V. Operations" /><link rel="chapter" href="deployment.html" title="Chapter 24. Installation &amp; Deployment" /><link rel="chapter" href="embedded-configuration.html" title="Chapter 25. Configuration &amp; Performance" /><link rel="chapter" href="ha.html" title="Chapter 26. High Availability" /><link rel="chapter" href="operations-backup.html" title="Chapter 27. Backup" /><link rel="chapter" href="operations-security.html" title="Chapter 28. Security" /><link rel="chapter" href="operations-monitoring.html" title="Chapter 29. Monitoring" /><link rel="part" href="tools.html" title="Part VI. Tools" /><link rel="chapter" href="tools-webadmin.html" title="Chapter 30. Web Interface" /><link rel="chapter" href="shell.html" title="Chapter 31. Neo4j Shell" /><link rel="part" href="community.html" title="Part VII. Community" /><link rel="chapter" href="community-support.html" title="Chapter 32. Community Support" /><link rel="chapter" href="community-contributing.html" title="Chapter 33. Contributing to Neo4j" /><link rel="appendix" href="manpages.html" title="Appendix A. Manpages" /><link rel="refentry" href="re01.html" title="neo4j" /><link rel="refentry" href="re02.html" title="neo4j-shell" /><link rel="refentry" href="re03.html" title="neo4j-backup" /><link rel="refentry" href="re04.html" title="neo4j-arbiter" /><link rel="subsection" href="query-functions-collection.html#functions-nodes" title="14.3.1. NODES" /><link rel="subsection" href="query-functions-collection.html#functions-relationships" title="14.3.2. RELATIONSHIPS" /><link rel="subsection" href="query-functions-collection.html#functions-extract" title="14.3.3. EXTRACT" /><link rel="subsection" href="query-functions-collection.html#functions-filter" title="14.3.4. FILTER" /><link rel="subsection" href="query-functions-collection.html#functions-tail" title="14.3.5. TAIL" /><link rel="subsection" href="query-functions-collection.html#functions-range" title="14.3.6. RANGE" /><link rel="subsection" href="query-functions-collection.html#functions-reduce" title="14.3.7. REDUCE" /><link rel="copyright" href="ln-idp1112768.html" title="License: Creative Commons 3.0" />
+
+
+<!-- favicon -->
+
+<link rel="shortcut icon" href="http://neo4j.org/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="http://neo4j.org/favicon.ico" type="image/x-icon" />
+
+<!-- style -->
+
+<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="css/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+<link href="css/shThemeEclipse.css" rel="stylesheet" type="text/css" />
+<link href="css/neo.css" rel="stylesheet" type="text/css" />
+
+<!-- Syntax Highlighter -->
+
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushJava.js"></script>
+<script type="text/javascript" src="js/shBrushJScript.js"></script>
+<script type="text/javascript" src="js/shBrushBash.js"></script>
+<script type="text/javascript" src="js/shBrushPlain.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript" src="js/shBrushGroovy.js"></script>
+<script type="text/javascript" src="js/shBrushCypher.js"></script>
+<script type="text/javascript" src="js/shBrushScala.js"></script>
+<script type="text/javascript" src="js/shBrushSql.js"></script>
+<script type="text/javascript" src="js/shBrushPython.js"></script>
+<script type="text/javascript" src="js/shBrushProperties.js"></script>
+
+<!-- activate when needed
+<script type="text/javascript" src="js/shBrushRuby.js"></script>
+<script type="text/javascript" src="js/shBrushCSharp.js"></script>
+-->
+ 
+<script type="text/javascript">
+  SyntaxHighlighter.defaults['tab-size'] = 4;
+  SyntaxHighlighter.defaults['gutter'] = false;
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all()
+</script>
+
+<!-- JQuery -->
+
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<!-- Replace SVG for browsers that lack support. -->
+<script type="text/javascript" src="js/svgreplacer.js"></script>
+
+<!-- Image Scaler -->
+
+<script type="text/javascript" src="js/imagescaler.js"></script>
+
+<!-- Table Styler -->
+
+<script type="text/javascript" src="js/tablestyler.js"></script>
+
+<!-- Version -->
+
+<script type="text/javascript" src="js/version.js"></script>
+
+<!-- Offline Sidebar -->
+
+<script type="text/javascript" src="js/sidebar.js"></script>
+
+
+<div xmlns="" class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">The Neo4j Manual</a></span> &gt; <span class="breadcrumb-link"><a href="cypher-query-lang.html">Cypher Query Language</a></span> &gt; <span class="breadcrumb-link"><a href="query-function.html">Functions</a></span> &gt; <span class="breadcrumb-node">Collection functions</span></div></head><body><div class="navheader"><table width="100%" summary="Navigation header"><tr><td width="20%" align="left"><a accesskey="p" href="query-functions-scalar.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="query-functions-mathematical.html">Next</a></td></tr></table><hr /></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="query-functions-collection"></a>14.3. Collection functions</h2></div></div></div><div class="toc"><dl><dt><span class="section"><a href="query-functions-collection.html#functions-nodes">14.3.1. NODES</a></span></dt><dt><span class="section"><a href="query-functions-collection.html#functions-relationships">14.3.2. RELATIONSHIPS</a></span></dt><dt><span class="section"><a href="query-functions-collection.html#functions-extract">14.3.3. EXTRACT</a></span></dt><dt><span class="section"><a href="query-functions-collection.html#functions-filter">14.3.4. FILTER</a></span></dt><dt><span class="section"><a href="query-functions-collection.html#functions-tail">14.3.5. TAIL</a></span></dt><dt><span class="section"><a href="query-functions-collection.html#functions-range">14.3.6. RANGE</a></span></dt><dt><span class="section"><a href="query-functions-collection.html#functions-reduce">14.3.7. REDUCE</a></span></dt></dl></div><p>Collection functions return collections of things — nodes in a path, and so on.</p><p>See also <a class="xref" href="query-operators.html#query-operators-collection" title="11.1.5. Collection operators">Section 11.1.5, “Collection operators”</a>.</p><div class="figure"><a id="idp9862944"></a><p class="title"><strong>Figure 14.3. Graph</strong></p><div class="figure-contents"><a class="ulink" href="images/cypher-functions-graph.svg" target="_top">
+<span class="inlinemediaobject"><img src="images/cypher-functions-graph.svg" alt="cypher-functions-graph.svg" /></span>
+</a></div></div><br class="figure-break" /><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-nodes"></a>14.3.1. NODES</h3></div></div></div><p>Returns all nodes in a path.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">NODES( path )</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>path:</em></span> A path.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START a=node(3), c=node(2)
+MATCH p=a--&gt;b--&gt;c
+RETURN NODES(p)</pre><p>
+</p><p>All the nodes in the path <code class="literal">p</code> are returned by the example query.</p><div class="queryresult table"><a id="idp9875008"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /></colgroup><thead><tr><th align="left" valign="top">NODES(p)</th></tr></thead><tfoot><tr><th align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">[Node[3]{name:"A",age:38,eyes:"brown"},Node[4]{name:"B",age:25,eyes:"blue"},Node[2]{name:"E",age:41,eyes:"blue",array:["one","two","three"]}]</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-relationships"></a>14.3.2. RELATIONSHIPS</h3></div></div></div><p>Returns all relationships in a path.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">RELATIONSHIPS( path )</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>path:</em></span> A path.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START a=node(3), c=node(2)
+MATCH p=a--&gt;b--&gt;c
+RETURN RELATIONSHIPS(p)</pre><p>
+</p><p>All the relationships in the path <code class="literal">p</code> are returned.</p><div class="queryresult table"><a id="idp9893440"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /></colgroup><thead><tr><th align="left" valign="top">RELATIONSHIPS(p)</th></tr></thead><tfoot><tr><th align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">[:KNOWS[0] {},:MARRIED[4] {}]</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-extract"></a>14.3.3. EXTRACT</h3></div></div></div><p>To return a single property, or the value of a function from a collection of nodes or relationships,
+ you can use <code class="literal">EXTRACT</code>. It will go through a collection, run an expression on every element, and return the results
+ in an collection with these values. It works like the <code class="literal">map</code> method in functional languages such as Lisp and Scala.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">EXTRACT( identifier in collection : expression )</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>collection:</em></span> An expression that returns a collection
+</li><li class="listitem">
+<span class="emphasis"><em>identifier:</em></span> The closure will have an identifier introduced in it’s context. Here you decide which identifier to use.
+</li><li class="listitem">
+<span class="emphasis"><em>expression:</em></span> This expression will run once per value in the collection, and produces the result collection.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START a=node(3), b=node(4), c=node(1)
+MATCH p=a--&gt;b--&gt;c
+RETURN extract(n in nodes(p) : n.age)</pre><p>
+</p><p>The age property of all nodes in the path are returned.</p><div class="queryresult table"><a id="idp9915760"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /></colgroup><thead><tr><th align="left" valign="top">extract(n in nodes(p) : n.age)</th></tr></thead><tfoot><tr><th align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">[38,25,54]</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-filter"></a>14.3.4. FILTER</h3></div></div></div><p><code class="literal">FILTER</code> returns all the elements in a collection that comply to a predicate.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">FILTER(identifier in collection : predicate)</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>collection:</em></span> An expression that returns a collection
+</li><li class="listitem">
+<span class="emphasis"><em>identifier:</em></span> This is the identifier that can be used from the predicate.
+</li><li class="listitem">
+<span class="emphasis"><em>predicate:</em></span> A predicate that is tested against all items in the collection.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START a=node(2)
+RETURN a.array, filter(x in a.array : length(x) = 3)</pre><p>
+</p><p>This returns the property named <code class="literal">array</code> and a list of values in it, which have the length <code class="literal">3</code>.</p><div class="queryresult table"><a id="idp9938240"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th align="left" valign="top">a.array</th><th align="left" valign="top">filter(x in a.array : length(x) = 3)</th></tr></thead><tfoot><tr><th colspan="2" align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">["one","two","three"]</code></p></td><td align="left" valign="top"><p><code class="literal">["one","two"]</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-tail"></a>14.3.5. TAIL</h3></div></div></div><p><code class="literal">TAIL</code> returns all but the first element in a collection.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">TAIL( expression )</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>expression:</em></span> This expression should return a collection of some kind.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START a=node(2)
+RETURN a.array, tail(a.array)</pre><p>
+</p><p>This returns the property named <code class="literal">array</code> and all elements of that property except the first one.</p><div class="queryresult table"><a id="idp9959792"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th align="left" valign="top">a.array</th><th align="left" valign="top">tail(a.array)</th></tr></thead><tfoot><tr><th colspan="2" align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">["one","two","three"]</code></p></td><td align="left" valign="top"><p><code class="literal">["two","three"]</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-range"></a>14.3.6. RANGE</h3></div></div></div><p>Returns numerical values in a range with a non-zero step value step. Range is inclusive in both ends.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">RANGE( start, end [, step] )</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>start:</em></span> A numerical expression.
+</li><li class="listitem">
+<span class="emphasis"><em>end:</em></span> A numerical expression.
+</li><li class="listitem">
+<span class="emphasis"><em>step:</em></span> A numerical expression.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START n=node(1)
+RETURN range(0,10), range(2,18,3)</pre><p>
+</p><p>Two lists of numbers are returned.</p><div class="queryresult table"><a id="idp9982416"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /><col class="col2" /></colgroup><thead><tr><th align="left" valign="top">range(0,10)</th><th align="left" valign="top">range(2,18,3)</th></tr></thead><tfoot><tr><th colspan="2" align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">[0,1,2,3,4,5,6,7,8,9,10]</code></p></td><td align="left" valign="top"><p><code class="literal">[2,5,8,11,14,17]</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="functions-reduce"></a>14.3.7. REDUCE</h3></div></div></div><p>To run an expression against individual elements of a collection, and store the result of the expression in
+ an accumulator, you can use <code class="literal">REDUCE</code>. It will go through a collection, run an expression on every element, storing the partial result
+ in the accumulator. It works like the <code class="literal">fold</code> or <code class="literal">reduce</code> method in functional languages such as Lisp and Scala.</p><p><span class="strong"><strong>Syntax:</strong></span> <code class="literal">REDUCE( accumulator = initial,  identifier in collection : expression )</code></p><p><span class="strong"><strong>Arguments:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+<span class="emphasis"><em>accumulator:</em></span> An identifier that will hold the result and the partial results as the collection is iterated
+</li><li class="listitem">
+<span class="emphasis"><em>initial:</em></span> An expression that runs once to give a starting value to the accumulator
+</li><li class="listitem">
+<span class="emphasis"><em>collection:</em></span> An expression that returns a collection
+</li><li class="listitem">
+<span class="emphasis"><em>identifier:</em></span> The closure will have an identifier introduced in it’s context. Here you decide which identifier to use.
+</li><li class="listitem">
+<span class="emphasis"><em>expression:</em></span> This expression will run once per value in the collection, and produces the result value.
+</li></ul></div><p><strong>Query. </strong>
+</p><pre class="programlisting brush: cypher">START a=node(3), b=node(4), c=node(1)
+MATCH p=a--&gt;b--&gt;c
+RETURN reduce(totalAge = 0, n in nodes(p) : totalAge + n.age)</pre><p>
+</p><p>The age property of all nodes in the path are summed and returned as a single value.</p><div class="queryresult table"><a id="idp10011056"></a><p class="title"><strong>Result</strong></p><div class="queryresult table-contents"><table summary="Result" cellspacing="0" cellpadding="0" border="1"><colgroup><col class="col1" /></colgroup><thead><tr><th align="left" valign="top">reduce(totalAge = 0, n in nodes(p) : totalAge + n.age)</th></tr></thead><tfoot><tr><th align="left" valign="top">1 row</th></tr></tfoot><tbody><tr><td align="left" valign="top"><p><code class="literal">117</code></p></td></tr></tbody></table></div></div><br class="queryresult table-break" /></div></div><HR xmlns=""></HR><a xmlns="" href="ln-idp1112768.html"><p xmlns="http://www.w3.org/1999/xhtml" class="copyright">Copyright © 2014 Neo Technology</p></a><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="query-functions-scalar.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="query-function.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="query-functions-mathematical.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top"> </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></body></html>
