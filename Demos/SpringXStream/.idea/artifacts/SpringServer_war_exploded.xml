@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="SpringServer:war exploded">
-    <output-path>$PROJECT_DIR$/target/SpringServer</output-path>
+    <output-path>$PROJECT_DIR$/target/SpringXStream</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="SpringServer/web/Web" />
       <element id="directory" name="WEB-INF">
