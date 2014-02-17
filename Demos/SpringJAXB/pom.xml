@@ -44,8 +44,9 @@
 		<finalName>SpringJAXB</finalName>
 		<plugins>
 			<plugin>
-			  <groupId>org.eclipse.jetty</groupId>
-			  <artifactId>jetty-maven-plugin</artifactId>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>7.0.1.v20091125</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

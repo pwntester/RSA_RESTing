@@ -220,3 +220,43 @@ Possible solutions: toURI(), notify(), toString(), toString(), toString(), every
 	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410)
 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
 
+feb 17, 2014 2:36:14 PM org.neo4j.server.logging.Logger log
+INFO: Setting startup timeout to: 120000ms based on -1
+feb 17, 2014 2:36:17 PM org.neo4j.server.logging.Logger log
+INFO: Successfully started database
+feb 17, 2014 2:36:17 PM org.neo4j.server.logging.Logger log
+INFO: Starting HTTP on port :7474 with 80 threads available
+feb 17, 2014 2:36:17 PM org.neo4j.server.logging.Logger log
+INFO: Enabling HTTPS on port :7473
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Mounted discovery module at [/]
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Loaded server plugin "CypherPlugin"
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Loaded server plugin "GremlinPlugin"
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Mounted REST API at [/db/data/]
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Mounted management API at [/db/manage/]
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Mounted webadmin at [/webadmin]
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Logging to {} via {}
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: Mounting static content at [/webadmin] from [webadmin-html]
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: jetty-6.1.25
+feb 17, 2014 2:36:18 PM org.neo4j.server.logging.Logger log
+INFO: NO JSP Support for {}, did not find {}
+feb 17, 2014 2:36:18 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.9 09/02/2011 11:17 AM'
+feb 17, 2014 2:36:18 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.9 09/02/2011 11:17 AM'
+feb 17, 2014 2:36:19 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.9 09/02/2011 11:17 AM'
+feb 17, 2014 2:36:19 PM org.neo4j.server.logging.Logger log
+INFO: Started {}
+feb 17, 2014 2:36:19 PM org.neo4j.server.logging.Logger log
+INFO: Started {}
+feb 17, 2014 2:36:19 PM org.neo4j.server.logging.Logger log
+INFO: Remote interface ready and available at [http://localhost:7474/]

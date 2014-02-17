@@ -184,3 +184,16 @@ Possible solutions: toURI(), notify(), toString(), toString(), toString(), every
 	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404) [jetty-6.1.25.jar:6.1.25]
 	at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:410) [jetty-6.1.25.jar:6.1.25]
 	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582) [jetty-util-6.1.25.jar:6.1.25]
+2014-02-17 13:36:14.623+0000 INFO  [API] Setting startup timeout to: 120000ms based on -1
+Detected incorrectly shut down database, performing recovery..
+2014-02-17 13:36:17.376+0000 INFO  [API] Successfully started database
+2014-02-17 13:36:17.399+0000 INFO  [API] Starting HTTP on port :7474 with 80 threads available
+2014-02-17 13:36:17.603+0000 INFO  [API] Enabling HTTPS on port :7473
+2014-02-17 13:36:18.122+0000 INFO  [API] Mounted discovery module at [/]
+2014-02-17 13:36:18.152+0000 INFO  [API] Loaded server plugin "CypherPlugin"
+2014-02-17 13:36:18.154+0000 INFO  [API] Loaded server plugin "GremlinPlugin"
+2014-02-17 13:36:18.155+0000 INFO  [API] Mounted REST API at [/db/data/]
+2014-02-17 13:36:18.157+0000 INFO  [API] Mounted management API at [/db/manage/]
+2014-02-17 13:36:18.214+0000 INFO  [API] Mounted webadmin at [/webadmin]
+2014-02-17 13:36:18.265+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2014-02-17 13:36:19.407+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]
