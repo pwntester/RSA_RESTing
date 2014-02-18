@@ -991,3 +991,22 @@ Storage files: (filename : modification date - size)
 2014-02-17 13:36:18.214+0000 INFO  [o.n.k.i.DiagnosticsManager]: Mounted webadmin at: /webadmin
 2014-02-17 13:36:19.406+0000 INFO  [o.n.k.i.DiagnosticsManager]: Server started on: http://localhost:7474/
 2014-02-17 13:36:19.407+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
+2014-02-17 16:28:55.491+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2014-02-17 16:28:55.494+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is no longer ready
+2014-02-17 16:28:55.495+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: GC Monitor stopped. 
+2014-02-17 16:28:55.500+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/index/lucene.log
+2014-02-17 16:28:55.501+0000 INFO  [o.n.k.i.t.TxManager]: TM shutting down
+2014-02-17 16:28:55.503+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log data/graph.db/nioneo_logical.log
+2014-02-17 16:28:55.504+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.507+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.509+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.511+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.propertystore.db.index.keys hit=0 miss=2 switches=0 ooe=0
+2014-02-17 16:28:55.512+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.propertystore.db.index hit=0 miss=1 switches=0 ooe=0
+2014-02-17 16:28:55.514+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.516+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.propertystore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.578+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.580+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore.nodestore.db hit=0 miss=0 switches=0 ooe=0
+2014-02-17 16:28:55.584+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/alvaro/Development/GitRepos/RSA_RESTing/Demos/Neo4j/neo4j-community-1.9.6/data/graph.db/neostore hit=0 miss=16 switches=0 ooe=0
+2014-02-17 16:28:55.587+0000 INFO  [o.n.k.i.n.x.NeoStoreXaDataSource]: NeoStore closed
+2014-02-17 16:28:55.587+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2014-02-17 16:28:55.587+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
