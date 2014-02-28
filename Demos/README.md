@@ -2,8 +2,6 @@
 
 * SpringXStream: SpringMVC RESTful application using XStream and RCE exploits
 * RestletXMLDecoder: Restlet application using object representation and RCCE exploits
-* Neo4J: DB to be used in the vulnerable VM and curl exploits
-* SpringJAXB: XXE Vulnerable SpringMVC REST API. To be deployed on the vulnerable VM (http://192.168.239.146/contacts)
 
 ## Using Metasploit
 The demos have been weaponized to use meterpreter sessions. Meterpreter have been modified to run the payload at object instantiation time. Once your MSF installation has been modified to use the modified meterpreter session (download it from https://github.com/pwntester/metasploit-javapayload), run the following command to generate the malicious jar.
